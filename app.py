@@ -2,21 +2,35 @@ from flask import Flask, render_template, url_for, request
 
 app = Flask(__name__)
 
-@app.route("/")
+def read_reviews():
+    with open('./reputations.txt', 'r', encoding='utf-8') as f:
+        reviews = f.read().split('\n')
+        print("-"*10)
+        print(reviews)
+        for i in reviews:
+            print(i)
+    return reviews
+
+@app.route('/')
 def home():
-    return render_template("home.html")
+    return render_template('home.html')
 
-@app.route("/services")
+@app.route('/services')
 def services():
-    return render_template("services.html")
+    return render_template('services.html')
 
-@app.route("/company")
-def company():
-    return render_template("company.html")
+@app.route('/reviews')
+def reviews():
+    reviews = read_reviews()
+    return render_template('reviews.html', reviews=reviews)
 
-@app.route("/news")
+@app.route('/news')
 def news():
-    return render_template("news.html")
+    return render_template('news.html')
 
-if __name__ == "__main__":
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+if __name__ == '__main__':
     app.run(debug=True)

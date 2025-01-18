@@ -1,59 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Default Title{% endblock %}</title>
+    <title>AIリテラシー研究会</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
-        <h1>AI子供守るくん</h1>
-        <ul class="header-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="header-content">
+            <h1>AIリテラシー研究会</h1>
+            <button class="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('services') }}">Services</a></li>
+                    <li><a href="{{ url_for('reviews') }}">Reviews</a></li>
+                    <li><a href="{{ url_for('news') }}">News</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <!-- 各ページのコンテンツ -->
-        {% block content %}
-        {% endblock %}
+        {% block content %}{% endblock %}
     </main>
     <footer>
-        <h3>AI子供守るくん</h3>
         <div class="footer-content">
-            <div class="footer-content-1">
-                <ul class="footer-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-content-2">
-                <ul class="footer-list">
-                    <li><a href="#">サイトマップ</a></li>
-                    <li><a href="#">プライバシーポリシー</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-content-3">
-                <ul class="footer-list">
-                    <li><a href="#">基本方針</a></li>
-                    <li><a href="#">保護者向け</a></li>
-                    <li><a href="#">企業向け</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+            <p>AIリテラシー研究会</p>
+            <p>フッター</p>
         </div>
     </footer>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/menu.js') }}"></script>
 </body>
 </html>

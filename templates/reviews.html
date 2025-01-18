@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>講演会の口コミ</h2>
+    <div class="reviews">
+        {% for review in reviews %}
+        <div class="review-box">
+            {{ review }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
