@@ -1,5 +1,63 @@
-<h1>news</h1>{% extends 'base.html' %}
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/events.css') }}">
+{% endblock %}
 
 {% block content %}
-<h1>ニュースページです</h1>
+<main class="container">
+    <div class="upcoming-box">
+        <div class="section upcoming">
+            <span></span> 開催予定
+        </div>
+        <div class="event-card">
+            <div class="image">
+                <img src="{{ url_for('static', filename='images/event_20250219.png') }}" alt="no.img">
+            </div>
+            <div class="details">
+                <p><strong>タイトル</strong><br>AIリテラシー</p>
+                <p><strong>日時</strong><br>2000/02/12（木）</p>
+                <p><strong>場所</strong><br>東京都台東区中町４丁目○○ー△△ー■■ アイウエオビル400号</p>
+                <p><strong>料金</strong><br>4000円</p>
+                <p><strong>内容</strong><br>・AIリテラシーの勉強会<br>・子ども向け</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="past-box">
+        <div class="section past">
+            <span></span> イベント実績
+        </div>
+        <div class="carousel">
+            <button>&#9664;</button>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <button>&#9654;</button>
+        </div>
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> -->
+
+    <div class="request-box">
+        <div class="section request">
+            <span></span> イベント依頼
+        </div>
+        <div class="request-text">
+            <p>ご依頼に合わせて、AI関連イベント開催も承っております。</p>
+            <p>例：画像生成を使ったワークショップ</p>
+            <p>例：安全なAiの使い方</p>
+        </div>
+
+
+        <p class="link">ご依頼はこちら</p>
+    </div>
+</main>
+    
+
 {% endblock %}

@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 100%;
+    margin-top: 80px;
+}
+.upcoming-box {
+    width: 100%;
+    height: auto; 
+    padding: 20px 30px;
+}
+
+.request-box {
+    width: 100%;
+    height: 200px;
+    padding: 0px 30px;
+}
+.section {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upcoming span {
+    background-color: #d66; /* 背景色に合わせた濃いめのピンク */
+}
+
+.request span {
+    background-color: #39c;
+}
+.section span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.upcoming {
+    background-color: pink;
+    width: 20%;
+    padding: 0px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.request {
+    background-color: lightblue;
+    width: 20%;
+    padding: 0px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.content {
+    background-color: deepskyblue;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.request-text {
+    width: 100%;
+    padding: 20px 0px;
+}
+.link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* イベント掲載用カード */
+.event-card {
+    border: 2px solid #bde0fe;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    background-color: #f9fdff;
+    
+}
+
+.event-card .image {
+    width: 100%;  /* 画像が親要素の幅に合わせて調整 */
+    height: 100%; /* 高さも親要素の高さに合わせる */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #666;
+    overflow: hidden; /* 画像が枠をはみ出さないようにする */
+}
+
+.event-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* 画像が枠に収まるように、縦横比を保ちつつ拡大または縮小 */
+    object-position: center;  /* 画像が枠内で中央に配置されるように調整 */
+}
+
+.event-card .details {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.event-card .details p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    /* 見出し用の背景 */
+    .section {
+        width: 80%;  /* 背景が画面の8割を占める */
+        margin: 0 auto; /* 中央に配置 */
+        justify-content: center; /* 左寄せ */
+    }
+
+    .upcoming span, .request span {
+        margin-right: 15px; /* 丸の間隔を少し広げる */
+    }
+    .section span {
+        display: none; /* 丸を消す */
+    }
+    /* イベントカードの中身を縦に並べる */
+    .event-card {
+        flex-direction: column; /* 画像→詳細を縦に並べる */
+        align-items: flex-start; /* 左寄せ */
+    }
+
+    .event-card .image {
+        width: 100%;      /* 親要素の幅に合わせて画像を調整 */
+        height: 250px;    /* 高さを200pxに設定 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;   /* スマホでは右の余白をなくす */
+    }
+
+    .event-card .image img {
+        width: 100%;        /* 幅を親要素に合わせて調整 */
+        height: 100%;       /* 高さを親要素に合わせて調整 */
+        object-fit: contain;  /* 画像が枠内に収まるように調整 */
+        object-position: center; /* 画像を中央に配置 */
+    }
+
+    .event-card .details {
+        width: 100%; /* 詳細部分もカード幅に合わせる */
+    }
+}
+
+/* 
+.past-box {
+    width: 100%;
+    height: auto;
+    padding: 0px 30px;
+}
+.past span {
+    background-color: #2aa;
+}
+.past {
+    background-color: lightgreen;
+    width: 20%;
+    padding: 0px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.carousel div {
+    width: 100px;
+    height: 50px;
+    background-color: deepskyblue;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.dots div {
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+} */

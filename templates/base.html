@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIリテラシー研究会</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_css %}{% endblock %}
 </head>
 <body>
     <header>
@@ -18,9 +19,8 @@
             <nav class="nav-menu">
                 <ul>
                     <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('services') }}">Services</a></li>
+                    <li><a href="{{ url_for('events') }}">Events</a></li>
                     <li><a href="{{ url_for('reviews') }}">Reviews</a></li>
-                    <li><a href="{{ url_for('news') }}">News</a></li>
                     <li><a href="{{ url_for('contact') }}">Contact</a></li>
                 </ul>
             </nav>

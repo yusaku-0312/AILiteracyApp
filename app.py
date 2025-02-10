@@ -15,22 +15,26 @@ def read_reviews():
 def home():
     return render_template('home.html')
 
-@app.route('/services')
-def services():
-    return render_template('services.html')
+@app.route('/events')
+def events():
+    return render_template('events.html')
 
 @app.route('/reviews')
 def reviews():
     reviews = read_reviews()
     return render_template('reviews.html', reviews=reviews)
 
-@app.route('/news')
-def news():
-    return render_template('news.html')
-
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+# @app.route('/services')
+# def services():
+#     return render_template('services.html')
+
+# @app.route('/news')
+# def news():
+#     return render_template('news.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
