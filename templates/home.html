@@ -1,27 +1,63 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Homeです</h1>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
-<p>hoge</p>
+<div class="floating-circles">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+    <div class="circle circle-4"></div>
+    <div class="circle circle-5"></div>
+    <div class="circle circle-6"></div>
+    <div class="circle circle-7"></div>
+    <div class="circle circle-8"></div>
+</div>
+
+<main>
+    <div class="container">
+        <div class="main-mission">
+            <div class="main-mission-text">
+                <h1 class="literacy-title">AIリテラシーを高める</h1>
+                <p class="literacy-text">
+                    AI時代に必要な知識・常識の学びの場を提供し、
+                    正しく安全なAI活用を推進します。
+                </p>
+            </div>
+            <div class="main-mission-image">
+                <img src="{{ url_for('static', filename='images/creative_color.png') }}" alt="no.img">
+            </div>
+        </div>
+        
+        <div class="main-about-us">
+            <h2 class="main-about-us-title">About us</h2>
+            <p class="hero-text" id="main-about-us-text">
+                AIの進化は、便利さとともに新たなリスクも生み出しています。
+            </p>    
+            <br>
+            <p class="hero-text" id="main-about-us-text">
+                特に、詐欺やフェイク情報など、知らないうちに巻き込まれる危険が増えているのが現実です。
+            </p>
+            <br>
+            <p class="mission-text" id="main-about-us-text">
+                私たちは、AI時代を生き抜くために必要な知識を提供し、<br>
+                「知らなかった」では済まされないリスクから人々を守ることを使命としています。
+            </p>
+            <br>
+            <p class="cta-text" id="main-about-us-text">
+                AIは使い方次第で武器にも盾にもなる。<br>
+                だからこそ、正しく学び、味方につけることが大切です。
+            </p>
+            <br>
+            <p class="cta-question" id="main-about-us-text">
+                私たちと一緒に、AIを安全に、そして賢く活用する力を身につけませんか？
+            </p>
+        </div>
+    </div>   
+</main>
+
+
+
+
+
+<script src="{{ url_for('static', filename='js/javascript.js') }}"></script>
+
 {% endblock %}
