@@ -224,7 +224,7 @@ main {
 
 /* フッタースタイルを保持 */
 footer {
-    background-color: #f0f0f0;
+    background-color: #c1f3ff;
     padding: 1rem;
 }
 
@@ -232,6 +232,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    color: black;
 }
 
 /* ハンバーガーメニューのスタイルを保持 */
@@ -265,30 +266,30 @@ footer {
     }
 
     .main-mission-text {
-        width: 90%; /* 横幅を調整 */
-        align-items: center; /* 中央揃え */
-        padding: 15px 0; /* 上下の余白を調整 */
+        width: 90%; 
+        align-items: center;
+        padding: 15px 0; 
     }
 
     .literacy-title {
-        font-size: 20px; /* タイトルサイズ調整 */
-        padding-left: 0; /* 左の余白を削除 */
-        text-align: center; /* タイトル中央揃え */
+        font-size: 20px;
+        padding-left: 0; 
+        text-align: center;
         text-align: left;
     }
 
     .literacy-text {
-        font-size: 10px; /* テキストサイズ調整 */
-        width: 100%; /* 横幅いっぱいに */
-        padding-left: 0; /* 左の余白を削除 */
+        font-size: 10px; 
+        width: 100%;
+        padding-left: 0;
         margin-top: 30px;
-        text-align: center; /* テキスト中央揃え */
+        text-align: center; 
         text-align: left;
     }
 
     .main-mission-image {
-        width: 80%; /* 画像の横幅を調整 */
-        margin-top: 50px; /* 上の余白を追加 */
+        width: 80%;
+        margin-top: 50px; 
     }
     .main-about-us {
         width: 90%;
