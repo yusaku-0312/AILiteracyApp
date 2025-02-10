@@ -53,6 +53,8 @@ main {
 
 .container {
     width: 100%;
+    height: auto;
+    min-height: 100vh;
 }
 .main-mission {
     width: 80%;
@@ -209,18 +211,21 @@ main {
 /* リテラシーセクション */
 
 /* レビューボックススタイルを保持して拡張 */
+.reviews-title {
+    text-align: center;
+    padding-top: 20px;
+}
+
 .review-box {
+    width: 80%;
+    margin: 20px auto 0;
     border: 1px solid #ddd;
     padding: 1rem;
     border-radius: 6px;
     box-shadow: 10px 10px 15px -10px rgb(63, 211, 248);
     background: white;
-    transition: transform 0.3s ease;
 }
 
-.review-box:hover {
-    transform: translateY(-5px);
-}
 
 /* フッタースタイルを保持 */
 footer {

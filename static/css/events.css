@@ -19,7 +19,7 @@ body {
 
 .request-box {
     width: 100%;
-    height: 200px;
+    height: 250px;
     padding: 0px 30px;
 }
 .section {
@@ -29,11 +29,11 @@ body {
     font-weight: bold;
 }
 .upcoming span {
-    background-color: #d66; /* 背景色に合わせた濃いめのピンク */
+    background-color: #39c;  
 }
 
 .request span {
-    background-color: #39c;
+    background-color: #d66; /* 背景色に合わせた濃いめのピンク */
 }
 .section span {
     width: 12px;
@@ -43,7 +43,7 @@ body {
     margin-right: 10px;
 }
 .upcoming {
-    background-color: pink;
+    background-color: lightblue;
     width: 20%;
     padding: 0px 15px;
     border-radius: 10px;
@@ -51,7 +51,7 @@ body {
 }
 
 .request {
-    background-color: lightblue;
+    background-color: pink;
     width: 20%;
     padding: 0px 15px;
     border-radius: 10px;
@@ -67,12 +67,26 @@ body {
     width: 100%;
     padding: 20px 0px;
 }
-.link {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
+.request-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #ff8fa3; /* 赤系パステル */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px; /* 両端を半円にする */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
 }
 
+/* ホバー時 */
+.request-btn:hover {
+    background-color: #ff5c75; /* 少し濃い赤 */
+}
 /* イベント掲載用カード */
 .event-card {
     border: 2px solid #bde0fe;
@@ -116,6 +130,29 @@ body {
     margin: 5px 0;
 }
 
+.apply-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #bde0fe;
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px; /* 両端を半円にする */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease;
+}
+
+/* ホバーエフェクト */
+.apply-btn:hover {
+    background-color: #87c7ff; /* 少し濃い青に */
+}
+
 @media (max-width: 768px) {
     /* 見出し用の背景 */
     .section {
@@ -154,6 +191,14 @@ body {
 
     .event-card .details {
         width: 100%; /* 詳細部分もカード幅に合わせる */
+    }
+    .apply-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    .request-btn {
+        width: 100%;
+        max-width: 300px;
     }
 }
 
