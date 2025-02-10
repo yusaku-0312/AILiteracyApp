@@ -252,7 +252,7 @@ footer {
 /* メディアクエリを保持して拡張 */
 @media (max-width: 768px) {
     .main-mission {
-        height: 90vh;
+        height: 100vh;
         flex-direction: column; /* 縦並びに変更 */
         align-items: center; /* 中央揃え */
         justify-content: center; /* 内容を中央に配置 */
