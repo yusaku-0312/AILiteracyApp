@@ -10,7 +10,10 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
-
+h1 a {
+    text-decoration: none; /* 下線を消す */
+    color: inherit; /* 親要素の色を継承 */
+}
 /* ヘッダースタイルを保持 */
 header {
     position: fixed;
@@ -227,6 +230,7 @@ main {
 }
 
 
+
 /* フッタースタイルを保持 */
 footer {
     background-color: #c1f3ff;
@@ -258,6 +262,23 @@ footer {
     background-color: #333;
     margin: 5px 0;
     transition: all 0.3s ease;
+}
+
+/* 問い合わせフォーム */
+/* フォームコンテナのスタイル */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* 画面の中央に配置 */
+    margin: 80px;
+}
+
+/* Googleフォームの埋め込み */
+.form-container iframe {
+    width: 90%;
+    max-width: 640px;
+    height: 848px;
 }
 
 /* メディアクエリを保持して拡張 */
