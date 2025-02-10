@@ -252,11 +252,10 @@ footer {
 /* メディアクエリを保持して拡張 */
 @media (max-width: 768px) {
     .main-mission {
-        height: 100vh;
+        /* border: 2px solid #000000; */
+        height: 90vh;
         flex-direction: column; /* 縦並びに変更 */
         align-items: center; /* 中央揃え */
-        justify-content: center; /* 内容を中央に配置 */
-        height: auto; /* 高さを自動調整 */
     }
 
     .main-mission-text {
@@ -266,23 +265,24 @@ footer {
     }
 
     .literacy-title {
-        font-size: 30px; /* タイトルサイズ調整 */
+        font-size: 20px; /* タイトルサイズ調整 */
         padding-left: 0; /* 左の余白を削除 */
         text-align: center; /* タイトル中央揃え */
         text-align: left;
     }
 
     .literacy-text {
-        font-size: 15px; /* テキストサイズ調整 */
+        font-size: 10px; /* テキストサイズ調整 */
         width: 100%; /* 横幅いっぱいに */
         padding-left: 0; /* 左の余白を削除 */
+        margin-top: 30px;
         text-align: center; /* テキスト中央揃え */
         text-align: left;
     }
 
     .main-mission-image {
         width: 80%; /* 画像の横幅を調整 */
-        margin-top: 20px; /* 上の余白を追加 */
+        margin-top: 50px; /* 上の余白を追加 */
     }
     .main-about-us {
         width: 90%;
