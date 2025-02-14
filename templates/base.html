@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIリテラシー研究会</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -32,8 +33,20 @@
     <footer>
         <div class="footer-content">
             <p>©️ 2025 AI Literacy Lab.</p>
+            <div class="social-icons">
+                <a href="https://x.com/ailab1010?s=21" target="_blank" aria-label="X (Twitter)">
+                    <img src="{{ url_for('static', filename='images/logo-black.png') }}"  alt="X (Twitter)" class="twitter-icon">
+                </a>
+                <a href="https://www.instagram.com/ai_literacy.001?igsh=ZDl0cXBxNXkwMWt2&utm_source=qr" target="_blank" aria-label="Instagram">
+                    <img src="{{ url_for('static', filename='images/Instagram_Glyph_Gradient.png') }}" alt="Instagram" class="instagram-icon">
+                </a>
+                <a href="https://www.threads.net/@ai_literacy.001?igshid=NTc4MTIwNjQ2YQ==" target="_blank" aria-label="Threads">
+                    <img src="{{ url_for('static', filename='images/threads-logo-black-01.png') }}" alt="Threads" class="threads-icon">
+                </a>
+            </div>
         </div>
     </footer>
+    
     <script src="{{ url_for('static', filename='js/menu.js') }}"></script>
 </body>
 </html>
