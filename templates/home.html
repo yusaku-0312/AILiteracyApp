@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
 <div class="floating-circles">
     <div class="circle circle-1"></div>
@@ -11,9 +10,16 @@
     <div class="circle circle-7"></div>
     <div class="circle circle-8"></div>
 </div>
-
 <main>
     <div class="container">
+        <!-- 新しく追加するMIRAINAリンクバナー -->
+        <div class="miraina-banner">
+            <a href="https://mirainaapp.onrender.com" target="_blank" class="miraina-link">
+                AI導入支援"MIRAINA"はこちらから
+                <span class="arrow">→</span>
+            </a>
+        </div>
+        
         <div class="main-mission">
             <div class="main-mission-text">
                 <h1 class="literacy-title">AIリテラシーを高める</h1>
@@ -51,7 +57,6 @@
                 私たちと一緒に、AIを安全に、そして賢く活用する力を身につけませんか？
             </p>
         </div>
-
         <div class="main-about-us">
             <h2 class="main-about-us-title">AIリテラシーとは</h2>
             <p class="hero-text" id="main-about-us-text">
@@ -65,7 +70,6 @@
             </p>
         </div>
         
-
         <div class="main-about-us">
             <h2 class="main-about-us-title">Services</h2>
             <p class="hero-text" id="main-about-us-text">
@@ -79,17 +83,10 @@
             <br>
             <p class="mission-text" id="main-about-us-text">
                 また、AIを使える人とそうでない人で社会に出た時にスキル的格差も生まれてくるので、<br>
-                AIを”安全に正しく”使えるようになる方法なども教えております。
+                AIを"安全に正しく"使えるようになる方法なども教えております。
             </p>
         </div>
-
     </div>   
 </main>
-
-
-
-
-
 <script src="{{ url_for('static', filename='js/javascript.js') }}"></script>
-
 {% endblock %}

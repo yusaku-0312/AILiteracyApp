@@ -48,6 +48,41 @@ nav a {
     color: #333;
 }
 
+/* 既存のCSSに追加するスタイル */
+/* MIRAINAリンクバナー */
+.miraina-banner {
+width: 100%;
+background-color: #3fd3f8;
+padding: 15px 0;
+text-align: center;
+margin-bottom: 20px;
+border-radius: 5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+.miraina-banner:hover {
+background-color: #2dbce0;
+transform: translateY(-2px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.miraina-link {
+display: block;
+color: white;
+font-size: 18px;
+font-weight: bold;
+text-decoration: none;
+padding: 5px;
+letter-spacing: 1px;
+}
+.arrow {
+display: inline-block;
+margin-left: 8px;
+transition: transform 0.3s ease;
+}
+.miraina-link:hover .arrow {
+transform: translateX(5px);
+}
+
 /* メインコンテンツスタイル */
 main {
     margin-top: 80px;
@@ -325,6 +360,12 @@ footer {
 
 /* メディアクエリを保持して拡張 */
 @media (max-width: 768px) {
+    .miraina-banner {
+        padding: 12px 0;
+    }
+    .miraina-link {
+        font-size: 16px;
+    }
     .main-mission {
         /* border: 2px solid #000000; */
         height: 90vh;
